@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal</title>
+        <style>
+            body {
+                background-color: #14131a;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: white;
+            }
+            h1 {
+                font-size: 50px;
+                margin: 0;
+                background-image: url(images/spiderman.png);
+                background-size: cover;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+            .img {
+                position: relative;
+                background: url(images/spiderman.jpg);
+                width: 800px;
+                height: 600px;
+                background-size: cover;
+            }
+            .img::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                min-height: 100%;
+                background: url(images/splash3.png);
+                width: 800px;
+                height: 600px;
+                background-size: cover;
+                background-position: center;
+                mix-blend-mode: screen;
+            }
+            button {
+                border: none;
+                background: none;
+                position: relative;
+                overflow: hidden;
+                padding: 10px;
+                color: #fff;
+                cursor: pointer;
+            }
+            button::after {
+                content: "";
+                display: block;
+                height: 4px;
+                width: 100%;
+                background-color: #2bd576;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.2s;
+            }
+            button:hover::after {
+                transform: scaleX(1);
+            }
+        </style>
+    </head>
+    <body class="img">
+        <!--<h1>Hello</h1>-->
+        <button>Click</button>
+    </body>
+</html>

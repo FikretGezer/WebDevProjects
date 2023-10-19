@@ -1,0 +1,119 @@
+.player-background {
+    position: relative;
+    
+    border: none;
+    border-radius: 20px;
+
+    margin-left: 50px;    
+
+    width: 200px;
+    height: 320px;
+
+    background-color: rgba(180, 212, 216, 0.5);
+}
+.upper-part {
+}
+.player-cover {    
+    display: inline-block;
+    margin-left: -35px;  
+}
+.player-cover-image {
+    margin-top: 20px;
+
+    width: 170px;
+    height: 170px;
+    
+    border: none;
+    border-radius: 20px;
+}
+.player-buttons {
+    display: grid;
+    grid-template-rows: 1fr;
+    
+    position: absolute;   
+
+    top: 40px; 
+    right: 10px;   
+    width: 50px;
+ 
+}
+.player-button-image {
+    margin-bottom: 15px;
+    margin-left: 16px;
+    width: 20px;
+
+    cursor: pointer;
+}
+.player-play-button-image {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 2px;
+    bottom: -60px;
+}
+.bottom-part {
+}
+.song-info {
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.song-name {
+
+}
+.singer-name {
+    color: rgb(122, 122, 122);
+}
+.song-timer {
+
+}
+.song-length {
+    
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    font-size: 12px;
+}
+.song-bar {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.song-range {
+    width: 170px;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 90%; /* Full-width */
+    height: 10px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    color: red;
+    overflow: hidden;
+    border-radius: 16px;
+}
+/* Mouse-over effects */
+.song-range:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .song-range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 10px; /* Set a specific slider handle width */
+    height: 10px; /* Slider handle height */
+    background: black; /* Green background */
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer; /* Cursor on hover */    
+    box-shadow: -407px 0 0 400px #f50;
+  }
+  
+ 
+
+.song-current-time {
+}
