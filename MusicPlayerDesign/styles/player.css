@@ -116,4 +116,9 @@
  
 
 .song-current-time {
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-left: 20px;
+    margin-top: 2px;
 }
