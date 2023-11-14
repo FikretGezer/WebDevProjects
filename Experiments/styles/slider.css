@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.web-projects-container {
+    height: 500px;
+    background-color: red;
+}
+.game-projects-container {
+    height: 500px;
+    background-color: blue;
+}
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+
+    width: 600px;
+    height: 338px;
+    border: 2px solid black;
+}
+
+.actual-image {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    transition: 0.4s;
+}
+.actual-image-second {
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 600px) {
+    .image-container {
+        width: 400px;
+        height: 225px;
+    }
+}

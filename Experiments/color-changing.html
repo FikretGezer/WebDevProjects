@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .fill {
+                position: relative;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                border-width: 0.2em;
+                padding: 5px 10px;
+                background: none;
+                transition: 0.3s;
+            }
+            .fill:hover {
+                color: white;
+            }
+            .fill:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 100%;
+                background: red;
+                z-index: -1;
+                transition: top 0.1s;
+            }
+            .fill:hover:before {
+                top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="fill">Fill</button>
+    </body>
+</html>
