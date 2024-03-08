@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(55, 142, 148);
+}
+.items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+}
