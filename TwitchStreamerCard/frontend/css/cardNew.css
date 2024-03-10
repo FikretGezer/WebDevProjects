@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: gray;
+}
+.upper-class {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(44, 44, 44);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.social img {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+}
+.social p {
+    width: 80%;
+    margin-left: 5px;
+}

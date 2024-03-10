@@ -3,6 +3,7 @@
     <head>
         <title>Twitch Streamer Card</title>
         <link rel="stylesheet" href="css/card.css">
+        <link rel="stylesheet" href="css/cardNew.css">
     </head>
     <body>
         <div class="card-holder">
@@ -14,10 +15,10 @@
                     </div>
                 </div>
                 <div class="profile">
-                    <div class="profile-pic">
+                    <div class="profile-pic clickable">
                         <img src="images/profile.jpg" alt="">
                     </div>
-                    <div class="profile-name">
+                    <div class="profile-name clickable">
                         The Man
                     </div>
                 </div>
@@ -30,28 +31,42 @@
                     <span class="follower-count">140K</span> followers
                 </div>
                 <div class="infos-socials flex-space-items">
-                    <div class="social-link">
-                        <!-- <img src="images/socials/instagram.svg" alt=""> -->
-                        <p>Instagram</p>
+                    <!-- <div class="social-link">
+                        <img src="images/socials/instagram.svg" alt="">
+                        <p class="clickable">Instagram</p>
                     </div>
                     <div class="social-link">
-                        <!-- <img src="images/socials/twitter.png" alt=""> -->
+                        <img src="images/socials/twitter.png" alt="">
+                        <p class="clickable">Twitter</p>
+                    </div>
+                    <div class="social-link">
+                        <img src="images/socials/yo.png" alt="">
+                        <p class="clickable">Youtube</p>
+                    </div> -->
+                    <div class="social">
+                        <img src="images/socials/instagram.png" alt="">
+                        <p class="link-name">Instagram</p>
+                    </div>
+                    <div class="social">
+                        <img src="images/socials/twitter.png" alt="">
                         <p>Twitter</p>
                     </div>
-                    <div class="social-link">
-                        <!-- <img src="images/socials/yo.png" alt=""> -->
+                    <div class="social">
+                        <img src="images/socials/youtube.png" alt="">
                         <p>Youtube</p>
                     </div>
                 </div>
             </div>
             <div class="buttons">
-                <button class="button-follow">
+                <button class="button-follow clickable">
                     Follow
                 </button>
-                <button class="button-more">
-                    :
+                <button class="button-more clickable">
+                    <p>:</p>
                 </button>
             </div>
         </div>
+
+        <script src="script/card.js"></script>
     </body>
 </html>
