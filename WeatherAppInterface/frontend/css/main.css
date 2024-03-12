@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(29, 29, 29);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.main-page {
+    width: 432px;
+    height: 768px;
+    /* background: linear-gradient(00deg, rgba(78,41,13,1) 0%, rgba(9,37,88,1) 100%); */
+    background: rgb(30, 38, 49);
+
+    display: grid;
+    grid-template-rows: 0.4fr 1fr 3fr 1fr 1fr;
+
+}
+
+.hamburger-menu {
+    background-color: red;
+}
+
+.app-header {
+    background-color: yellow;
+}
+
+.weather-image {
+    background-color: cyan;
+}
+
+.weather-info {
+    background-color: blue;
+}
+
+.todays-changes {
+    background-color: gray;
+}
