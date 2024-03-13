@@ -52,6 +52,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: 0.15s;
+}
+
+.weather-image:hover {
+    transform: var(--td-rotateY);
 }
 
 .weather-info {
@@ -79,19 +85,29 @@ body {
     width: 0%;
     background-color: rgba(1, 1, 1, 0.8);
 
+    border: none;
+    border-top-left-radius: 0px;
+
     transition: 0.3s;
     animation-duration: 0.3s;
 }
 
 .animated {
-    animation-name: example;
+    animation-name: appear;
 }
 .animated-reverse {
-    animation-name: example;
+    animation-name: appear;
     animation-direction: reverse;
 }
 
-@keyframes example {
-    0%   {background-color: rgba(1, 1, 1, 0);}
-    100% {background-color: rgba(1, 1, 1, 0.8);}
+@keyframes appear {
+    0%   {
+        background-color: rgba(1, 1, 1, 0);
+        border-top-left-radius: 0px;
+    }
+    1% {
+        border-top-left-radius: 500px;
+    }
+    50% {background-color: rgba(1, 1, 1, 0.8);}
+    100% {border-top-left-radius: 0px;}
   }
