@@ -61,7 +61,7 @@
 }
 
 .todays-changes div:hover {
-    width: 500%;
+    width: 1000%;
 }
 .todays-changes div:hover p{
     text-shadow: 3px 3px rgb(194, 128, 5);
@@ -81,4 +81,9 @@
     transition: 0.2s;
 
     cursor: pointer;
+}
+
+.todays-changes div p a {
+    color: white;
+    text-decoration: none;
 }

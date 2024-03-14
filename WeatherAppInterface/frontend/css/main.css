@@ -1,24 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    background-color: rgb(29, 29, 29);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 100vh;
-}
-
 .main-page {
-    width: 432px;
-    height: 768px;
-    /* background: linear-gradient(00deg, rgba(78,41,13,1) 0%, rgba(9,37,88,1) 100%); */
     background: white;
 
     display: grid;
@@ -26,7 +6,6 @@ body {
 
     position: relative;
 }
-
 .hamburger-menu {
     /* background-color: red; */
 
