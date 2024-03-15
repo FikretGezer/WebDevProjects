@@ -66,8 +66,8 @@
 
 .weather-date {
     color: rgb(245, 245, 245);
-    font-size: 17px;
     text-shadow: 2px 2px rgba(241, 241, 241, 0.253);
+    font-size: 17px;
 }
 
 .get-back-button-holder button{
@@ -175,7 +175,11 @@
 }
 .weather-one div p:nth-child(1){
     color: rgb(196, 191, 191);
+    text-shadow: 2px 2px rgba(226, 226, 226, 0.8);
     font-weight: lighter;
+}
+.weather-one div p:nth-child(2){
+    text-shadow: 2px 2px rgba(133, 131, 131, 0.507);
 }
 
 .weather-two {
@@ -196,6 +200,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    text-shadow: 2px 2px rgba(141, 141, 141, 0.507);
 }
 
 .temperature-shape:nth-child(1) {
@@ -324,8 +330,10 @@
 
 .weather-date-for-temperature p:nth-child(1) {
     font-size: 16px;
+    text-shadow: 2px 2px rgba(133, 131, 131, 0.507);
 }
 .weather-date-for-temperature p:nth-child(2) {
     font-size: 14px;
     color: rgb(175, 175, 175);
+    text-shadow: 2px 2px rgba(187, 187, 187, 0.507);
 }
