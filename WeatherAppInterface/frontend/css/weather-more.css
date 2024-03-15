@@ -127,6 +127,11 @@
     text-shadow: 3px 3px rgba(241, 241, 241, 0.486);
 }
 
+.weather-location a {
+    text-decoration: none;
+    color: white;
+}
+
 .weather-date {
     color: rgb(245, 245, 245);
     font-size: 17px;
@@ -144,6 +149,8 @@
     position: absolute;
     right: 60px;
     top: 30px;
+
+    cursor: pointer;
 
     transition: 0.3s;
 }
